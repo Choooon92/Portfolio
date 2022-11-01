@@ -43,9 +43,8 @@ const Social = () => {
           Cv <BsFillPersonLinesFill size={30} /> 
         </>
       ),
-      href: '/public/CurriculumFS.docx',
+      href: '#',
       style: "rounded-br-md",
-      download: true,
     },
   ]
 
@@ -75,30 +74,3 @@ const Social = () => {
 }
 
 export default Social
-
-
-// {/* redes sociales */}
-// <div className='hidden lg:flex flex fixed flex-col top-[35%] left-0'>
-// <ul>
-//   <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
-//     <a className='flex justify-between items-center w-full text-gray-300'
-//     href='https://www.linkedin.com/in/javier-sebastian-leal-fullstack/' target='_blank'>
-//       Linkedin <FaLinkedin size={30}/>
-//     </a>
-//   </li>
-//   <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333] '>
-//     <a className='flex justify-between items-center w-full text-gray-300'
-//     href='https://github.com/Choooon92' target='_blank'>
-//       Github <FaGithub size={30}/>
-//     </a>
-//   </li>
- 
-//   <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
-//     <a className='flex justify-between items-center w-full text-gray-300'
-//     href='https://docs.google.com/document/d/1Hhffwz6XhWRm7w3t6ctF_aO54kuYJj4hNxd76OZxxjw/edit?usp=sharing' target='_blank'>
-//       Resume <BsFillPersonLinesFill size={30}/>
-//     </a>
-//   </li>
-// </ul>
-
-// </div>
