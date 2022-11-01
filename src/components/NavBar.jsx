@@ -4,7 +4,8 @@ import { Link } from 'react-scroll';
 
 
 const NavBar = () => {
-
+  
+  
   const links =[ 
     {
       id: 1,
@@ -33,9 +34,8 @@ const NavBar = () => {
     },
 
   ]
-
-
-
+  
+  
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav)
 
@@ -48,7 +48,7 @@ const NavBar = () => {
 
           {links.map(({ id, link, linkear}) => (
 
-            <li key={id} >
+            <li key={id} className='hover:scale-150 duration-300' >
               <Link to={linkear} smooth={true} duration={500} >
                 {link}
               </Link>
