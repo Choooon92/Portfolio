@@ -1,147 +1,66 @@
 import React from 'react'
+import '../index.css'
 import Festival from '../assets/imgWorks/FestivalMusica.png'
 import BlogCafe from '../assets/imgWorks/BlogCafe.png'
 import TiendaFront from '../assets/imgWorks/TiendaFront.png'
 import BienesRaices from '../assets/imgWorks/BienesRaices.png'
-import WorkImg from '../assets/workImg.jpeg'
+import FormularioCard from '../assets/imgWorks/FormularioCard.png'
 
 const Works = () => {
+
+  const portfolios = [
+    {
+      id: 1,
+      src: Festival
+    },
+    {
+      id: 2,
+      src: BlogCafe
+    },
+    {
+      id: 3,
+      src: TiendaFront
+    },
+    {
+      id: 4,
+      src: BienesRaices
+    },
+    {
+      id: 6,
+      src: FormularioCard
+    },
+  ]
+
   return (
-    <div name='work' className='w-full md:h-screen text-gray-300 bg-[#0a192f] '>
-      <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full '>
+    <div name='work' className='w-full md:h-screen text-gray-300 bg-[#0a192f]'>
+      <div className='max-w-[1000px] p-4 mx-auto flex flex-col justify-center w-full h-full'>
         <div className='pb-8'>
           <p className='text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600 '>Works</p>
           <p className='py-6'>Estos son algunos de mis proyectos mas recientes</p>
         </div>
 
-      {/* Container works */}
-        <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4 '>
-        {/* Grid Item */}
-        <div style={{backgroundImage: `url(${Festival})`}}
-           className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div '>
-            
-            {/* Hover */}
-            <div className='opacity-0 group-hover:opacity-100'>
-              <span className='text-2xl font-bold text-white tracking-wider'>   
-                React JS Apliccation
-              </span>
-              <div className='pt-8 text-center'>
-                <a href='https://sharp-sinoussi-0d9f97.netlify.app/' target='_blank'>
-                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
-                </a>
+        
+          <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
+          {portfolios.map(({id, src}) => (
 
-                <a href='/'>
-                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
-                </a>
-              </div>     
-            </div>
+              <div key={id} className='shadow-md shadow-gray-600 rounded-lg'>
+                <img
+                  src={src}
+                  alt='Fest'
+                  className='rounded-md duration-200 hover:scale-105'
+                />
+
+                <div className='flex items-center justify-center'>
+                  <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-150 font-medium border-r-1'>Page</button>
+
+                  <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-150 font-medium'>Code</button>
+                  
+                </div>
+
+              </div>
+
+            ))}        
           </div>
-          
-          {/* Grid Item */}
-          <div style={{backgroundImage: `url(${BlogCafe})`}}
-           className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div '>
-            
-            {/* Hover */}
-            <div className='opacity-0 group-hover:opacity-100'>
-              <span className='text-2xl font-bold text-white tracking-wider'>   
-                React JS Apliccation
-              </span>
-              <div className='pt-8 text-center'>
-                <a href='https://frosty-perlman-c8683b.netlify.app/' target='_blank'>
-                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
-                </a>
-
-                <a href='/'>
-                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
-                </a>
-              </div>     
-            </div>
-          </div>
-
-          {/* Grid Item */}
-        <div style={{backgroundImage: `url(${TiendaFront})`}}
-           className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div '>
-            
-            {/* Hover */}
-            <div className='opacity-0 group-hover:opacity-100'>
-              <span className='text-2xl font-bold text-white tracking-wider'>   
-                React JS Apliccation
-              </span>
-              <div className='pt-8 text-center'>
-                <a href='https://modest-allen-43b0aa.netlify.app/' target='_blank'>
-                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
-                </a>
-
-                <a href='/'>
-                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
-                </a>
-              </div>     
-            </div>
-          </div>
-
-          {/* Grid Item */}
-        <div style={{backgroundImage: `url(${BienesRaices})`}}
-           className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div '>
-            
-            {/* Hover */}
-            <div className='opacity-0 group-hover:opacity-100'>
-              <span className='text-2xl font-bold text-white tracking-wider'>   
-                React JS Apliccation
-              </span>
-              <div className='pt-8 text-center'>
-                <a href='https://elastic-carson-0205fb.netlify.app/' target='_blank'>
-                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
-                </a>
-
-                <a href='/'>
-                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
-                </a>
-              </div>     
-            </div>
-          </div>
-
-          {/* Grid Item */}
-        <div style={{backgroundImage: `url(${WorkImg})`}}
-           className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div '>
-            
-            {/* Hover */}
-            <div className='opacity-0 group-hover:opacity-100'>
-              <span className='text-2xl font-bold text-white tracking-wider'>   
-                React JS Apliccation
-              </span>
-              <div className='pt-8 text-center'>
-                <a href='/'>
-                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
-                </a>
-
-                <a href='/'>
-                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
-                </a>
-              </div>     
-            </div>
-          </div>
-
-          {/* Grid Item */}
-        <div style={{backgroundImage: `url(${WorkImg})`}}
-           className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div '>
-            
-            {/* Hover */}
-            <div className='opacity-0 group-hover:opacity-100'>
-              <span className='text-2xl font-bold text-white tracking-wider'>   
-                React JS Apliccation
-              </span>
-              <div className='pt-8 text-center'>
-                <a href='/'>
-                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
-                </a>
-
-                <a href='/'>
-                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
-                </a>
-              </div>     
-            </div>
-          </div> 
-        </div>
       </div>
     </div>
   )
