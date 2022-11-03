@@ -13,19 +13,19 @@ const Works = () => {
       id: 1,
       src: Festival,
       page: 'https://sharp-sinoussi-0d9f97.netlify.app',
-      // code:
+      code: 'https://github.com/Choooon92/festival-musica.git'
     },
     {
       id: 2,
       src: BlogCafe,
       page: 'https://frosty-perlman-c8683b.netlify.app',
-      // code:
+      code: 'https://github.com/Choooon92/blog-cafe.git'
     },
     {
       id: 3,
       src: TiendaFront,
       page: 'https://modest-allen-43b0aa.netlify.app',
-      // code:
+      code: 'https://github.com/Choooon92/tienda-developer.git'
     },
     {
       id: 4,
@@ -51,7 +51,7 @@ const Works = () => {
 
         
           <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
-          {portfolios.map(({id, src, page}) => (
+          {portfolios.map(({id, src, page, code}) => (
 
               <div key={id} className='shadow-md shadow-gray-600 rounded-lg'>
                 <img
@@ -68,7 +68,14 @@ const Works = () => {
                   
                   </button>
 
-                  <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-150 font-medium'>Code</button>
+                  <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-150 font-medium'>
+                  
+                    <a href={code} target='_blank'
+                    rel='noreferrer'>
+                      Code
+                     </a>
+
+                  </button>
                   
                 </div>
 

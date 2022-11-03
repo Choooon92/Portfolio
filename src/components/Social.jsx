@@ -34,17 +34,8 @@ const Social = () => {
           Mail <HiOutlineMail  size={30} /> 
         </>
       ),
-      href: 'mailto:javi_arc@hotmail.com' ,
-    },
-    {
-      id: 4,
-      bracket: (
-        <>
-          Cv <BsFillPersonLinesFill size={30} /> 
-        </>
-      ),
-      href: '#',
-      style: "rounded-br-md",
+      href: 'mailto:javi_arc@hotmail.com',
+      style: "rounded-br-md"
     },
   ]
 
@@ -58,7 +49,6 @@ const Social = () => {
           <a 
             href={href}
             className='flex justify-between items-center w-full text-white'
-            download={download}
             target="_blank"
             rel='noreferrer'
 

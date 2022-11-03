@@ -14,10 +14,10 @@ const About = () => {
           </div>
         <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
           <div className='sm:text-right text-4xl font-bold'>
-            <p>Hola, soy javier, gusto en conocerte.</p>
+            <p>Hola, gusto en conocerte.</p>
           </div>
           <div>
-            <p>Me gustan los desafios, aprender y superar mis limites. Busco mejorar mis tecnicas dia a dia para poder dar el 110%, me encantan los idiomas y viajar con mis hijos y mi pareja! </p>
+            <p>Desde que conoci el mundo IT busco orientar mis habilidades técnicas para desempeñarme en el desarrollo de software, participando en todas las fases de su ciclo de vida. La motivacion para seguir capacitándome en nuevas tecnologías, responsabilidad del rol asumido y trabajo en equipo son mis valores fundamentales.</p>
           </div>
         </div>
       </div>

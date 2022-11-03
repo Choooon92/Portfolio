@@ -4,8 +4,7 @@ import { Link } from 'react-scroll';
 
 
 const NavBar = () => {
-  
-  
+     
   const links =[ 
     {
       id: 1,
@@ -37,6 +36,8 @@ const NavBar = () => {
   
   
   const [nav, setNav] = useState(false);
+
+
   const handleClick = () => setNav(!nav)
 
 
