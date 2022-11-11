@@ -5,6 +5,7 @@ import BlogCafe from '../assets/imgWorks/BlogCafe.png'
 import TiendaFront from '../assets/imgWorks/TiendaFront.png'
 import BienesRaices from '../assets/imgWorks/BienesRaices.png'
 import FormularioCard from '../assets/imgWorks/FormularioCard.png'
+import WeatherApp from '../assets/imgWorks/weather-app.png'
 
 const Works = () => {
 
@@ -38,6 +39,12 @@ const Works = () => {
       src: FormularioCard,
       page: 'https://formulario-card.vercel.app/',
       code: 'https://github.com/Choooon92/formulario-card'
+    },
+    {
+      id: 6,
+      src: WeatherApp,
+      page: 'https://weather-app-ten-delta.vercel.app/',
+      code: 'https://github.com/Choooon92/weather-app.git'
     },
   ]
 
