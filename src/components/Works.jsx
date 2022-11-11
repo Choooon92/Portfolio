@@ -5,7 +5,7 @@ import BlogCafe from '../assets/imgWorks/BlogCafe.png'
 import TiendaFront from '../assets/imgWorks/TiendaFront.png'
 import BienesRaices from '../assets/imgWorks/BienesRaices.png'
 import FormularioCard from '../assets/imgWorks/FormularioCard.png'
-import WeatherApp from '../assets/imgWorks/weather-app.png'
+import WeatherApp from '../assets/imgWorks/WeatherApp.png'
 
 const Works = () => {
 
